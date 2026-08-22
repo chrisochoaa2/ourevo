@@ -106,12 +106,12 @@ body::before {
   filter: drop-shadow(0 12px 20px rgba(140, 29, 64, 0.12))
     brightness(0)
     saturate(100%)
-    invert(16%)
-    sepia(72%)
-    saturate(2420%)
-    hue-rotate(320deg)
-    brightness(86%)
-    contrast(94%);
+    invert(15%)
+    sepia(80%)
+    saturate(1400%)
+    hue-rotate(325deg)
+    brightness(68%)
+    contrast(105%);
 }
 
 .link-list {
@@ -174,23 +174,50 @@ body::before {
 
 @media (max-width: 520px) {
   .page {
-    width: min(100% - 12px, 760px);
-    padding: 6px 0;
+    width: min(100% - 10px, 760px);
+    padding: 4px 0;
   }
 
   .hub-shell {
-    border-radius: 24px;
+    border-radius: 20px;
   }
 
   .intro {
-    padding: 20px 16px 18px;
+    padding: 16px 12px 14px;
+  }
+
+  .eyebrow {
+    margin-bottom: 10px;
+    font-size: 0.74rem;
+    padding: 7px 12px;
+  }
+
+  .brand-mark {
+    width: min(72vw, 300px);
+    margin-bottom: 10px;
   }
 
   .link-list {
-    width: min(100%, 100%);
+    width: 100%;
+    gap: 10px;
+  }
+
+  .link-card {
+    min-height: 68px;
+    padding: 13px 14px;
+    border-radius: 16px;
+  }
+
+  .link-label {
+    font-size: 0.95rem;
+  }
+
+  .link-note {
+    font-size: 0.82rem;
   }
 
   .footer-note {
-    padding: 0 16px 18px;
+    padding: 0 12px 14px;
+    font-size: 0.9rem;
   }
 }
